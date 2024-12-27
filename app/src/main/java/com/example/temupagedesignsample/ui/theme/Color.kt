@@ -11,3 +11,4 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 val selectedNavItemColor = Color(0xFFB20902)
+val greenTextColor = Color(0xFF328F2E)

@@ -68,6 +68,7 @@ import com.example.temupagedesignsample.R
 import com.example.temupagedesignsample.data.entity.Toys
 import com.example.temupagedesignsample.getAllCategories
 import com.example.temupagedesignsample.ui.component.CategoryCircle
+import com.example.temupagedesignsample.ui.theme.greenTextColor
 import com.example.temupagedesignsample.ui.theme.selectedNavItemColor
 import kotlin.math.max
 import kotlin.math.truncate
@@ -211,9 +212,9 @@ fun HomePage() {
                 verticalAlignment = Alignment.CenterVertically,
                 horizontalArrangement = Arrangement.SpaceEvenly
             ) {
-                Text("✓ Ücretsiz kargo", color = Color(0xFF328F2E), fontSize = 14.sp, fontWeight = FontWeight.W500)
+                Text("✓ Ücretsiz kargo", color = greenTextColor, fontSize = 14.sp, fontWeight = FontWeight.W500)
                 Text(" | ", color = Color(0xFFD1C7BA), fontSize = 17.sp)
-                Text(" ✓ 30 gün içinde fiyat ayarlaması", color = Color(0xFF328F2E), fontSize = 14.sp, fontWeight = FontWeight.W500)
+                Text(" ✓ 30 gün içinde fiyat ayarlaması", color = greenTextColor, fontSize = 14.sp, fontWeight = FontWeight.W500)
             }
             Row(
                 modifier = Modifier.padding(start = 3.dp, end = 3.dp, top = 10.dp, bottom = 10.dp).horizontalScroll(rowScrollState2),
