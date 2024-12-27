@@ -232,7 +232,15 @@ fun HomePage() {
                         contentScale = ContentScale.Crop,
                         modifier = Modifier.size(60.dp).clip(CircleShape).border(width = 2.dp, color = Color.Black, shape = CircleShape)
                     )
-                    Text("Tümü", fontSize = 13.sp, color = Color.Black, modifier = Modifier.padding(top = 10.dp))
+                    Box(
+                        modifier = Modifier.padding(top = 10.dp).height((screenHeight/33).dp).width((screenWidth/7).dp).clip(
+                            RoundedCornerShape(20.dp)
+                        ).background(Color.Black),
+                        contentAlignment = Alignment.Center,
+                    ) {
+                        Text("Tümü", fontSize = 13.sp, color = Color.White)
+                    }
+
                 }
                 CategoryCircle(R.drawable.secimler_img, "Şeçimler")
                 CategoryCircle(R.drawable.oyuncaklar_img, "Oyuncaklar")
